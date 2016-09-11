@@ -1,0 +1,107 @@
+/********** Base styles **********/
+* {
+	box-sizing: border-box;
+	font-family: "Lucida Console";
+}
+
+h1 {
+	font-size: 175%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.container {
+	border: 1px solid black;
+	height: 250px;
+	position: relative;
+	background-color: #999966;
+	overflow: auto;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.title {
+	width: 110px;
+	font-size: 125%;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+#title1 {
+	background-color: orange;
+}
+
+#title2 {
+	background-color: maroon;
+	color: white;
+}
+
+#title3 {
+	background-color: #33cc33;
+}
+
+.content {
+	padding: 35px 15px 10px 15px;
+}
+
+/********** Desktop view **********/
+@media (min-width: 992px) {
+	#section1 {
+		width: 30%;
+		margin-left: 3%;
+		margin-right: 2%;
+	}
+	#section2 {
+		width: 30%;
+		margin-right: 2%;
+	}
+	#section3 {
+		width: 30%;
+		margin-right: 3%;
+	}
+}
+
+/********** Tablet view **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#section1 {
+		width: 43%;
+		margin-right: 2%;
+		margin-left: 6%;
+	}
+	#section2 {
+		width: 43%;
+		margin-right: 6%;
+	}
+	#section3 {
+		width: 88%;
+		margin-right: 6%;
+		margin-left: 6%;
+	}
+}
+
+/********** Mobile view **********/
+
+@media (max-width: 767px) {
+	#section1 {
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	#section2 {
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	#section3 {
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+}
