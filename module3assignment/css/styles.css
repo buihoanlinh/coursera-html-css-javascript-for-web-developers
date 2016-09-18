@@ -1,0 +1,175 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  /*background-color: #61122f;*/
+  font-family: 'Oxygen', sans-serif;
+}
+
+body > h1 {
+  font-size: 175%;
+  /*text-align: center;*/
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #61122f;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: auto;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #cc0000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #cc0000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #222;
+  border-top: 0;
+}
+/* END FOOTER */
+
+
+
+/* HOME PAGE */
+#menu-mango, #menu-apple, #menu-salad {
+  /*height: 250px;*/
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  /*overflow: hidden;*/
+}
+/*#menu-mango {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-apple {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}*/
+#menu-mango span, #menu-apple span, #menu-salad span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  color: #fff;
+}
+#home-tiles > div {
+  border: 1px solid #000000;
+  margin-bottom: 30px;
+  background-color: #61122f;
+}
+
+.detail-description {
+  padding: 20px 15px 10px 15px;
+  overflow: hidden;
+}
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  
+  /* End Header */
+
+  /* Home Page */
+  
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  /* End Header */
+
+  /* Footer */
+
+  /* End Footer */
+
+  /* Home Page */
+  #home-tiles > div {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #home-tiles > div {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
+
